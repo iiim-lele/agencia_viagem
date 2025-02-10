@@ -20,5 +20,37 @@
     --texto-terciario: #F9f9f9; 
     --texto-cinza: #ccc; 
 }
+
 /* Estilos para o cabeçalho */
+header {
+    background-color: var(--fundo-escuro);
+    color: var(--texto-claro);
+    /* afastamento básico */
+    padding: 15px;
+    /* centralizar o texto */
+    text-align: center;
+}
+
+h1 {
+    /* fonte baixada do google fonts */
+    font-family: "Dancing Script", serif;
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    /* da os espaços entre os itens do nav */
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--texto-claro);
+    /* tira o sublinhado dos itens do nav */
+    text-decoration: none;
+    /* deixa o texto em "negrito" */
+    /* existe tambem o bolder que deixa mais em negrito ainda */
+    font-weight: bold;
+}
 /* 2ª Digitação (Aqui) */

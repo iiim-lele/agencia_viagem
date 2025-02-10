@@ -53,4 +53,98 @@ nav a {
     /* existe tambem o bolder que deixa mais em negrito ainda */
     font-weight: bold;
 }
-/* 2ª Digitação (Aqui) */
+
+/* o hover quando você passar o mouse em cima faz o item ficar diferente */
+nav a:hover {
+    color: var(--texto-cinza);
+}
+
+/* estilos para o container principal */
+/* main */
+.container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* paralax */
+    background: url(img/london.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+/* estilos para a barra lateral esquerda */
+.sidebar {
+    /* neste caso usará 25% da largura */
+    flex: 1;
+    min-width: 200px;
+    background: var(--texto-secundario);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* estilos para o conteúdo principal */
+.main-content {
+    /* neste caso usará 50% da largura */
+    flex: 2;
+    min-width: 300px;
+    padding: 15px;
+}
+
+.subtittle {
+    color: var(--texto-secundario);
+    font-size: 2.5rem;
+}
+
+/* estilos para a barra lateral direita */
+.secondary-content {
+    /* neste caso usará 25% restantes da largura */
+    flex: 1;
+    min-width: 200px;
+    background: var(--texto-terciario);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* estilos para os itens das listas */
+li {
+    padding: 9px;
+} 
+
+/* estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid var(--texto-cinza);
+    border-radius: 5px;
+}
+
+button {
+    background: var(--fundo-escuro);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #005f8a;
+}
+
+/* estilos para as imagens */
+img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+/* estilos responsivos para telas menores que 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
